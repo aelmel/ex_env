@@ -28,6 +28,8 @@ defmodule ExEnv.Utils do
         :ok
 
       false ->
+        dbg(otp_app)
+
         "invalid OTP application name #{otp_app}"
         |> raise
     end
